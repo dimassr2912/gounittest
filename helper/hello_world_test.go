@@ -104,3 +104,45 @@ func TestTableTest(t *testing.T) {
 		})
 	}
 }
+
+// Benchmark
+func BenchmarkHelloWorld(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		HelloWorld("Rama")
+	}
+}
+
+// Sub Benchmark
+func BenchmarkSub(b *testing.B) {
+	b.Run("Dimas", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Dimas")
+		}
+	})
+	b.Run("Rama", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Rama")
+		}
+	})
+
+}
+
+// table benchmark
+func BenchmarkTable(b *testing.B) {
+	benchamrks := []struct { // Membuat slice struct literal
+		name    string
+		request string
+	}{
+		{
+			name:    "Rama",
+			request: "Rama",
+		},
+	}
+	for _, benchmark := range benchmarks {
+		b.Run(benchmark.name, func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				HelloWorld(benchmark.request)
+			}
+		})
+	}
+}
