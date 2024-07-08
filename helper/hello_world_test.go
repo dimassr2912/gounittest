@@ -129,7 +129,7 @@ func BenchmarkSub(b *testing.B) {
 
 // table benchmark
 func BenchmarkTable(b *testing.B) {
-	benchamrks := []struct { // Membuat slice struct literal
+	benchmarks := []struct { // Membuat slice struct literal
 		name    string
 		request string
 	}{

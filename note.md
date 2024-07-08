@@ -15,6 +15,7 @@ Service test / integration test lebih fokus ke satu aplikasi
 Unit test
     Contohnya backend, biasanya terdapat file / layer2 pada backend
         Pada web biasanya ada controller, service / business logic, repository 
+            Repository: Jembatan ke database
         Yang di test adalah layer terkecil, misal controller saja / service saja
     Biasanya yang diuji adalah function / method
 
@@ -34,3 +35,4 @@ Menjalankan unit test: go test (Running semua di dalam package)
 
 Tidak paham: 
 mocking service pada test pyramid
+mock 
