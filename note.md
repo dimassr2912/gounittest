@@ -3,7 +3,7 @@ Software testing:
     Salah satu ilmu software testing adalah unit testing
 
 Pada test pyramid: ada unit testing - service testing / integration testing - UI testing / end to end test
-    unit testing paling murah implementasi, implementasi mudah (mudah dibuat), eksekusi cepat sehingga porsinya banyak, 
+    unit testing paling murah, implementasi mudah (mudah dibuat), eksekusi cepat sehingga porsinya banyak, 
     ke atas makin mahal resource, mahal implementasi, ekseusi lambat
 
 Unit test: test komponen paling kecil
